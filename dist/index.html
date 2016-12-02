@@ -15,8 +15,8 @@
         <div class="input-label">What is your name?</div>
         <input type="test" placeholder="Enter name here" ng-model="name"/>
         <p class="greeting" ng-if="name">
-            <span ng-if="name == 'eric' || name == 'Eric'">Go fuck yourself, {{ name }}!</span>
-            <span ng-if="name != 'eric' && name != 'Eric'">Hello, {{ name }}!</span>
+            <span ng-if="( name | lowercase ) == 'eric'">Go fuck yourself, {{ name }}!</span>
+            <span ng-if="( name | lowercase ) != 'eric'">Hello, {{ name }}!</span>
         </p>
 
     </body>
