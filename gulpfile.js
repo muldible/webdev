@@ -21,8 +21,8 @@ gulp.task('sass', function() {
 });
 
 // Watch Files For Changes
-gulp.task('watch', function() {
-    gulp.watch('js/*.js', ['']);
+gulp.task('watch', function () {
+    gulp.watch("dist/js/**/*.js").on('change', browserSync.reload);
     gulp.watch("dist/**/*.html").on('change', browserSync.reload);
     gulp.watch('scss/*.scss', ['sass']);
     gulp.watch(['dist/css/**/*.css'], function () {

@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
     <head>
         <meta charset="UTF-8">
-        <title>Hi Eric</title>
+        <title>WebDev Prototype</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
 
         <h2>Test</h2>
-        <p class="test-paragraph-class">Look at this text being changed by our CSS</p>
+        <p class="test-paragraph-class">Look at your Developer Console</p>
+
+        <div class="input-label">What is your name?</div>
+        <input type="test" placeholder="Enter name here" ng-model="name"/>
+        <p class="greeting" ng-if="name">
+            <span ng-if="name == 'eric' || name == 'Eric'">Go fuck yourself, {{ name }}!</span>
+            <span ng-if="name != 'eric' && name != 'Eric'">Hello, {{ name }}!</span>
+        </p>
 
     </body>
 </html>

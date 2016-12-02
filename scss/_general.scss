@@ -1,0 +1,33 @@
+body {
+    background: rebeccapurple;
+}
+
+h2 {
+    color: white;
+}
+
+.test-paragraph-class {
+    font-size: 18pt;
+    font-weight: bold;
+    color: gray;
+}
+
+.input-label {
+    font-size: 14pt;
+}
+
+input {
+    font-size: 14pt;
+    margin-top: 5px;
+    display: block;
+}
+
+.greeting {
+    padding: 20px;
+    border-radius: 3px;
+    background: red;
+    color: orange;
+    display: inline-block;
+    font-size: 18pt;
+    font-weight: bold;
+}
