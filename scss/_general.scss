@@ -2,18 +2,20 @@ body {
     background: rebeccapurple;
 }
 
-h2 {
+h1 {
     color: white;
+    text-transform: uppercase;
 }
 
 .test-paragraph-class {
     font-size: 18pt;
     font-weight: bold;
-    color: gray;
+    color: lightsalmon;
 }
 
 .input-label {
     font-size: 14pt;
+    color: white;
 }
 
 input {
@@ -25,9 +27,14 @@ input {
 .greeting {
     padding: 20px;
     border-radius: 3px;
-    background: red;
-    color: orange;
+    background: darkslateblue;
+    color: ghostwhite;
+    border: 1px solid darkblue;
     display: inline-block;
     font-size: 18pt;
     font-weight: bold;
+}
+
+.fucko-detected {
+    background: red;
 }

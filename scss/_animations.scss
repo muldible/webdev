@@ -1,0 +1,24 @@
+
+.fade.ng-enter {
+    transition: top 0.25s ease-out, opacity 0.25s linear;
+    opacity:0;
+    position: relative;
+    top: -5px;
+}
+
+.fade.ng-enter.ng-enter-active {
+    top: 0;
+    opacity:1;
+}
+
+.fade.ng-leave {
+    transition: top 0.25s ease-in, opacity 0.25s linear;
+    position: relative;
+    top: 0;
+    opacity:1;
+}
+
+.fade.ng-leave.ng-leave-active {
+    opacity:0;
+    top: 5px;
+}
