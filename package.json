@@ -1,7 +1,7 @@
 {
-  "name": "webdev",
+  "name": "promotional-book-website",
   "version": "0.0.1",
-  "description": "A standalone test project for trying out development environment options.",
+  "description": "A book review website or something.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

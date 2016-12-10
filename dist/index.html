@@ -2,23 +2,32 @@
 <html ng-app="myApp">
     <head>
         <meta charset="UTF-8">
-        <title>WebDev Prototype</title>
+        <title>eBook Cover Demo</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="js/main.js"></script>
     </head>
-    <body>
+    <body ng-controller="mainCtrl">
 
-        <h1>Welcome to the webdev project!</h1>
-        <p class="test-paragraph-class">Right click -> inspect element -> click on "console" tab</p>
+        <div class="page">
+            <div class="quote-container">
+                <div class="fade" ng-if="showingQuote">
+                    <div class="quote-text">
+                        <span class="quotation-mark first">&quot;</span>
+                        <span class="quote-body">{{ quoteBody }}</span>
+                        <span class="quotation-mark">&quot;</span>
+                    </div>
+                    <div class="quote-author">-{{ quoteAuthor }}</div>
+                </div>
+            </div>
 
-        <div class="input-label">What is your name?</div>
-        <input type="test" placeholder="Enter name here" ng-model="name"/>
-        <p class="greeting fade" ng-if="name" ng-class="{ 'fucko-detected': (name | lowercase) == 'eric' }">
-            <span ng-if="( name | lowercase ) == 'eric'">Go fuck yourself, {{ name }}!</span>
-            <span ng-if="( name | lowercase ) != 'eric'">Hello, {{ name }}!</span>
-        </p>
+            <div class="credit-container">
+                <p class="author">Julian Baggini</p>
+                <p class="title">ATHEISM</p>
+                <p class="subtitle">A Very Short Introduction</p>
+            </div>
+        </div>
 
     </body>
 </html>

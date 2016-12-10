@@ -16,7 +16,7 @@ gulp.task('browser-sync', function() {
 // Compile Our Sass
 gulp.task('sass', function() {
     return gulp.src('scss/*.scss')
-        .pipe(sass())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('dist/css'));
 });
 
